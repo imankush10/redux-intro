@@ -37,7 +37,7 @@ function AccountOperations() {
   }
 
   function handlePayLoan() {
-    if (!loanAmount || balance < loanAmount) return;
+    if (!loan || balance < loan) return;
     dispatch(payLoan());
   }
 
